@@ -1,7 +1,7 @@
 // this is the jenkinsfile for the project
 
 pipeline {
-    agent any
+    agent ubuntu
     stages {
         stage('Build') {
             steps {
