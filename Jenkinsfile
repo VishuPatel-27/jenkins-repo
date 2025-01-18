@@ -1,7 +1,9 @@
 // this is the jenkinsfile for the project
 
 pipeline {
-    agent ubuntu
+    // job will run on this agent
+    // maching label 
+    agent { label 'ubuntu' || 'linux' }
     stages {
         stage('Build') {
             steps {
