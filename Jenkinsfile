@@ -3,7 +3,7 @@
 pipeline {
     // job will run on this agent
     // maching label 
-    agent { label 'ubuntu' || 'linux' }
+    agent { label 'agent1' }
     stages {
         stage('Build') {
             steps {
