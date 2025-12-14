@@ -3,7 +3,7 @@
 pipeline {
     // job will run on this agent
     // maching label 
-    agent { label 'agent1' }
+    agent any
     stages {
         stage('Build') {
             steps {
