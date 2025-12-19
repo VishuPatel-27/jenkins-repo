@@ -5,7 +5,7 @@ pipeline {
     // maching label 
     agent any
     parameters{
-        choice(name: 'buildVersion', choices: ['1.0.0', '1.2.0', '1.3.0'], description: 'This will decide deployable build version of artifacts'),
+        choice(name: 'buildVersion', choices: ['1.0.0', '1.2.0', '1.3.0'], description: 'This will decide deployable build version of artifacts')
         booleanParam(name: 'flagValue', defaultValue: false, description: 'Does test stage run?')
     }
     stages {
